@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+        <title>Form validation</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <i class="fas fa-check-circle"></i>
+                <p data-text></p>
+                <i class="fas fa-times"></i>
+            </div>
+        </header>
+        <form action="" data-form>
+            <fieldset>
+                <legend style="margin: 0 70px">Form validation: </legend>
+                <div class="information">
+                    <p>
+                        <label for=""
+                            ><input
+                                type="text"
+                                name="First Name"
+                                id="firstname"
+                                placeholder="First Name"
+                                data-first-name
+                        /></label>
+                    </p>
+                    <p>
+                        <label for=""
+                            ><input
+                                type="text"
+                                name="Last Name"
+                                id="lastname"
+                                placeholder="Last Name"
+                                data-last-name
+                        /></label>
+                    </p>
+                    <p class="title">Gender</p>
+                    <p class="gender" id="gender">
+                        <label
+                            ><input
+                                type="radio"
+                                name="gender"
+                                value="male"
+                                data-gender="male"
+                            />M</label
+                        >
+                        <label
+                            ><input
+                                type="radio"
+                                name="gender"
+                                value="female"
+                                data-gender="female"
+                            />F</label
+                        >
+                    </p>
+                    <p>
+                        <textarea
+                            name="Message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Your message here..."
+                            data-textarea
+                        ></textarea>
+                    </p>
+                    <button type="submit" data-button>Submit</button>
+                </div>
+                <img
+                    class="picture"
+                    src="https://picsum.photos/300/400"
+                    alt="Picture"
+                />
+            </fieldset>
+        </form>
+    </body>
+</html>
